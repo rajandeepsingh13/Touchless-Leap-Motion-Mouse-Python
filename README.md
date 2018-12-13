@@ -1,7 +1,7 @@
 # Touchless: Leap Motion Mouse (Python)
 Leap Motion based Python script that has various gestures and can work as a substitute for the mouse.
 
-The project consists of a single ~200 line script that can be configured for any screen and has the following gestures:
+The project consists of a single ~150 line script that can be configured for any screen and has the following gestures:
 1) Cursor control using the right index finger
 2) Touch to select
 3) Swipe to scroll
