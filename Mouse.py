@@ -130,14 +130,17 @@ class LeapMotionListener(Leap.Listener):
             if gesture.type == Leap.Gesture.TYPE_SWIPE:
                 swipe = SwipeGesture(gesture)
                 swipeDir=swipe.direction
-                if(swipeDir.x > 0 and math.fabs(swipeDir.x) > math.fabs(swipeDir.y)):
-                    print "Swiped Right" + str(swipe.id)
-                    keyboard.press(kb.Key.left)
-                    keyboard.release(kb.Key.left)
-                elif(swipeDir.x < 0 and math.fabs(swipeDir.x) > math.fabs(swipeDir.y)):
-                    print "Swiped Left"
-                    keyboard.press(kb.Key.right)
-                    keyboard.release(kb.Key.right)
+                
+                #Left/Right arrow key movement
+                #if(swipeDir.x > 0 and math.fabs(swipeDir.x) > math.fabs(swipeDir.y)):
+                #    print "Swiped Right" + str(swipe.id)
+                #    keyboard.press(kb.Key.left)
+                #    keyboard.release(kb.Key.left)
+                #elif(swipeDir.x < 0 and math.fabs(swipeDir.x) > math.fabs(swipeDir.y)):
+                #    print "Swiped Left"
+                #    keyboard.press(kb.Key.right)
+                #    keyboard.release(kb.Key.right)
+                
                 if(swipeDir.y > 0 and math.fabs(swipeDir.x) < math.fabs(swipeDir.y)):
                     #print "Swiped Up"
                     mouse.scroll(0,-200)
