@@ -14,6 +14,9 @@ Leap Motion SDK version: 3.2.1
 
 External Libraries Used: pynput
 
+
+Video Link: https://youtu.be/M7c9KHRiRY0
+
 # Setup Guide
 
 Note: Make sure the screen you are using isn't a secondary screen.
